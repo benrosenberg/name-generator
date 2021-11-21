@@ -27,7 +27,8 @@
       let outString = ''
       for (let i = 0; i < testList.length; i++) {
         let j = getRandomInt(testList[i].length);
-        outString += ' ' + testList[i][j];
+        if (i > 0) { outString += ' '; }
+        outString += testList[i][j];
       }
       return outString;
     }
