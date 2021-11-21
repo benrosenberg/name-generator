@@ -34,7 +34,7 @@
     }
     
     function setName() {
-      document.getElementById("outText").textContent = generateName();
+      document.getElementById("name").textContent = generateName();
     }
     
     var el = document.getElementById("clickMe");
@@ -53,9 +53,9 @@
 
 
 
-<button type="button" class="btn btn-secondary" id="clickMe">Load Calendar</button>
+<button onclick="setName()">generate new name</button>
   
-<span id="outText"> here is my text </span>
+<div id="name">click the button...</div>
 
 </body>
 </html>
