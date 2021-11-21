@@ -12,6 +12,14 @@
     div.column{display: inline-block; vertical-align: top; width: 50%;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
   </style>
   <link rel="stylesheet" href="https://benrosenberg.info/style.css" />
   <script>
@@ -43,10 +51,10 @@
 <h1 class="title", style="text-align: left;">pretentious name generator</h1>
 </header>
 
-<button onclick="setName()" style="width:100px; margin:0 auto;">generate new name</button>
- 
-
-<div id="name" style="width:800px; margin:0 auto;">click the button...</div>
+<div class="center">
+  <button onclick="setName()" style="width:100px; margin:0 auto;">generate new name</button>
+  <div id="name" style="text-align: center;">click the button...</div>
+</div>
 
 </body>
 </html>
