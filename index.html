@@ -14,11 +14,10 @@
     ul.task-list{list-style: none;}
     .center {
       margin: 0;
-      position: absolute;
       top: 50%;
       left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      right: 50%;
+      bottom: 50%;
     }
   </style>
   <link rel="stylesheet" href="https://benrosenberg.info/style.css" />
@@ -53,7 +52,7 @@
 
 <button onclick="setName()" style="font-size: 18pt;">generate new name</button>
   
-<div id="name" style="text-align: center; font-size: 69pt; transform: translate(-5%);">
+<div id="name" class="center" style="text-align: center; font-size: 69pt;">
   click the button...
 </div>
 
