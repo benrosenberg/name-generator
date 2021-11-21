@@ -36,8 +36,8 @@
       document.getElementById("outText").textContent = generateName();
     }
     
-    var e1 = document.getElementById("clickMe");
-    if (e1) {
+    var el = document.getElementById("clickMe");
+    if (el) {
       if (el.addEventListener)
         el.addEventListener("click", setName, false);
       else if (el.attachEvent)
