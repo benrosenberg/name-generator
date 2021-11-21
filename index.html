@@ -15,7 +15,32 @@
   </style>
   <link rel="stylesheet" href="https://benrosenberg.info/style.css" />
   <style>
-    document.getElementById("clickMe").onclick = function () { alert('hello!'); };
+    let testList = [['Apple', 'Banana', 'Cornflake'], 
+                    ['Syrup', 'Mustard', 'Ketchup'], 
+                    ['Chair', 'Desk', 'Couch']];
+    
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+    
+    function generateName() {
+      let outString = ''
+      for (let i = 0; i < testList.length; i++) {
+        let j = getRandomInt(testList[i].length);
+        outString = concat(outString, ' ', testList[i][j];
+      }
+      return out;
+    }
+    
+    function setName() {
+      document.getElementById("outText").textContent = generateName();
+    }
+    
+    var el = document.getElementById("clickMe");
+    if (el.addEventListener)
+      el.addEventListener("click", doFunction, false);
+      else if (el.attachEvent)
+        el.attachEvent('onclick', doFunction);
   </style>
 </head>
 <body style="margin-top: 4%">
@@ -26,6 +51,8 @@
 
 
 <input id="clickMe" type="button" value="clickme"/>
+  
+<span id="outText"> here is my text </span>
 
 </body>
 </html>
