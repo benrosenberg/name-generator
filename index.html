@@ -37,10 +37,12 @@
     }
     
     var el = document.getElementById("clickMe");
-    if (el.addEventListener)
-      el.addEventListener("click", setName, false);
-    else if (el.attachEvent)
+    if (e1) {
+      if (el.addEventListener)
+        el.addEventListener("click", setName, false);
+      else if (el.attachEvent)
         el.attachEvent('onclick', setName);
+    }
   </script>
 </head>
 <body style="margin-top: 4%">
